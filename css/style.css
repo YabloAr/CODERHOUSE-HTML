@@ -1,0 +1,316 @@
+/*ESTILOS GENERALES*/
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-color: blue ;
+  border-style: dashed;
+}
+
+/*CLASES GENERALES*/
+
+.encajar-a-contenedor {
+  width: 100%;
+}
+
+.main-estilo-articulo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 1px;
+  border-color: red ;
+  border-style: dashed;
+
+}
+
+/*ESTILO BARRA DE PROMOCIONES*/
+
+#promo-barra-top {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+}
+
+#promo-texto {
+  color: azure;
+  font-style: italic;
+}
+
+/*ESTILO COLUMNA DE NAVEGACION -HEADER-*/
+
+header {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "nav"
+    "none"
+    "aside"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 20%;
+  padding: 10px;
+}
+
+.seccion-navegacion__logo {
+  grid-area: logo;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 50%;
+}
+
+.seccion-navegacion__logo img {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+}
+
+header nav {
+  display: flex;
+  grid-area: nav;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 80%;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.bigger:hover {
+    color: aliceblue;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+header #redes {
+  grid-area: aside;
+}
+
+header footer {
+  display: flex;
+  grid-area: footer;
+  color: aliceblue;
+}
+
+/*SECCION BLOQUE DERECHO -MAIN ESTILOS GENERALES-*/
+
+main h2 {
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+.main-article {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5%;
+  padding: 1rem;
+  width: 400px;
+  height: 300px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 1px;
+}
+
+.main-article a {
+  text-decoration: none;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*SECCION MAIN*/
+
+.index-main-background {
+  background-image: url("../assets/img/Fondo\ Chico\ Color.jpg");
+  background-size: cover;
+}
+
+.retrato-main-background {
+  background-image: url("../assets/img/Fondo\ Chicho\ Bn.jpg");
+  background-size: cover;
+}
+
+.books-main-background {
+  background-image: url("../assets/img/Fondo\ Chicho\ Bn.jpg");
+  background-size: cover;
+}
+
+.tienda-main-background {
+  background-image: url("../assets/img/Fondo\ Estudio\ Color.jpg");
+  background-size: cover;
+}
+
+.contacto-main-background {
+  background-image: url("../assets/img/Fondo\ Paisaje\ Color.jpg");
+  background-size: cover;
+}
+
+.books {
+  display: grid;
+  grid-template-areas:
+    "books-info books-info books-info"
+    "img1 img2 img3"
+    "img4 img5 img6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  align-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.books img {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.books #info {
+  grid-area: books-info;
+}
+
+.retrato {
+  display: grid;
+  grid-template-areas:
+    "retrato-info retrato-info retrato-info"
+    "carousel carousel carousel"
+    "carousel carousel carousel";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  align-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.retrato img {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+#retrato-articulo-info {
+  grid-area: retrato-info;
+}
+
+#retrato-contenedor-carousel {
+  width: 60%;
+grid-area: carousel;
+}
+
+/* CORRECCION DE CAROUSEL POR SELECTORES */
+
+#contenedor-carousel {
+  border-color: rgb(255, 217, 0) ;
+  border-style: dashed;
+  background-color: aqua;
+}
+
+#retrato-carousel {
+  border-color: aquamarine ;
+  border-style: dashed;
+}
+
+.main-article fieldset {
+  padding: 5%;
+}
+
+
+/* BOTON USADO EN INDEX MAIN: me copie el style de stackoverflow*/
+
+.button-50 {
+  appearance: button;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 15px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 8px 30px;
+  }
+
+
+}
