@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   height: 100vh;
   max-width: 100vw;
@@ -53,7 +52,6 @@ footer aside {
   max-height: 4vh;
 }
 
-
 /*CLASES GENERALES*/
 
 .encajar-a-contenedor {
@@ -67,8 +65,6 @@ footer aside {
   justify-content: space-around;
   font-family: "Oswald", sans-serif;
   text-shadow: 1px;
-
-
 }
 
 /*ESTILO BARRA DE PROMOCIONES*/
@@ -207,10 +203,6 @@ main h2 {
   background-size: cover;
 }
 
-
-
-
-
 .contacto-main-background {
   display: flex;
   flex-direction: column;
@@ -233,7 +225,6 @@ main h2 {
   color: aliceblue;
 }
 
-
 .contacto-article fieldset {
   font-size: 1vw;
   color: aliceblue;
@@ -244,12 +235,6 @@ main h2 {
 .lista-formulario {
   padding: 0.5vw;
 }
-
-
-
-
-
-
 
 .books {
   display: grid;
@@ -304,8 +289,6 @@ main h2 {
   grid-area: carousel;
 }
 
-
-
 /* CORRECCION DE CAROUSEL POR SELECTORES */
 
 #contenedor-carousel {
@@ -313,12 +296,9 @@ main h2 {
   background-color: aqua;
 }
 
-
-
 .main-article fieldset {
   padding: 5%;
 }
-
 
 /* BOTON USADO EN INDEX MAIN: me copie el style de stackoverflow*/
 
@@ -493,6 +473,4 @@ main h2 {
   .lista-formulario {
     padding: 0vw;
   }
-
-
 }
