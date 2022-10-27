@@ -337,6 +337,7 @@ main h2 {
 
   .button-50 {
     padding: 8px 30px;
+    margin-top: 3vh;
   }
 
   body {
@@ -347,17 +348,18 @@ main h2 {
     display: flex;
     flex-direction: column;
     width: 100vh;
-    height: 30vh;
+    height: 35vh;
     justify-items: center;
     padding-top: 2vh;
     padding-bottom: 2vh;
+
   }
 
   .seccion-navegacion__logo {
     display: flex;
     height: 20vh;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border-style: dashed;
     border-color: blue;
     width: 20vh;
@@ -370,14 +372,18 @@ main h2 {
   }
 
   header nav ul {
+    width: 90%;
+    height: 5vh;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-style: dashed;
     border-color: aquamarine;
+    padding: 0%;
   }
 
-  main {
-    width: 100vw;
+  header nav ul li a:hover {
+    color: azure
   }
 
   .index-main-background {
@@ -385,8 +391,75 @@ main h2 {
     background-size: cover;
   }
 
+  main {
+    width: 100vw;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .main-article {
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 10vw;
+    padding: 8vw;
+    align-self: flex-end;
+    font-size: 1rem;
+    justify-self: end;
+  }
+
+  .retrato-main-background {
+    background-image: url("../assets/img/Fondo\ Vertical\ Maca\ Bn.jpg");
+    background-size: cover;
+  }
+
+  #retrato-contenedor-carousel {
+    width: 100%;
+  }
+
+  .retrato {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-between;
+    align-items: center;
+  }
+
+  #retrato-articulo-info {
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 10vw;
+    padding: 8vw;
+  }
+
+  .contacto-main-background {
+    background-image: url(../assets/img/Fondo\ Paisaje\ Color.jpg);
+    background-size: cover;
+  }
+
+  .contacto-main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  .contacto-main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contacto-main h2 {
+    font-size: 2rem;
+    color: aliceblue;
+  }
 
 
+  .contacto-main fieldset {
+    font-size: 1.5rem;
+    color: aliceblue;
+
+    width: 100%;
+  }
 
 
 }
