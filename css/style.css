@@ -67,8 +67,7 @@ footer aside {
   justify-content: space-around;
   font-family: "Oswald", sans-serif;
   text-shadow: 1px;
-  border-color: red;
-  border-style: dashed;
+
 
 }
 
@@ -208,10 +207,49 @@ main h2 {
   background-size: cover;
 }
 
+
+
+
+
 .contacto-main-background {
-  background-image: url("../assets/img/Fondo\ Paisaje\ Color.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/Fondo\ Paisaje\ Color.jpg);
   background-size: cover;
 }
+
+.contacto-article {
+  margin-top: 10vh;
+  background-color: rgba(128, 128, 128, 0.50);
+  border-radius: 2vw;
+  width: 40%;
+  align-self: center;
+  padding: 2vw;
+
+}
+
+.contacto-article h2 {
+  font-size: 2vw;
+  color: aliceblue;
+}
+
+
+.contacto-article fieldset {
+  font-size: 1vw;
+  color: aliceblue;
+  padding: 2vw;
+  width: 100%;
+}
+
+.lista-formulario {
+  padding: 0.5vw;
+}
+
+
+
+
+
+
 
 .books {
   display: grid;
@@ -266,18 +304,16 @@ main h2 {
   grid-area: carousel;
 }
 
+
+
 /* CORRECCION DE CAROUSEL POR SELECTORES */
 
 #contenedor-carousel {
-  border-color: rgb(255, 217, 0);
-  border-style: dashed;
+
   background-color: aqua;
 }
 
-#retrato-carousel {
-  border-color: aquamarine;
-  border-style: dashed;
-}
+
 
 .main-article fieldset {
   padding: 5%;
@@ -333,7 +369,7 @@ main h2 {
   transform: translate(2px, 2px);
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
   .button-50 {
     padding: 8px 30px;
@@ -360,15 +396,12 @@ main h2 {
     height: 20vh;
     justify-content: center;
     align-items: center;
-    border-style: dashed;
-    border-color: blue;
     width: 20vh;
   }
 
   .seccion-navegacion__logo a img {
     width: 15vh;
-    border-style: dashed;
-    border-color: red;
+
   }
 
   header nav ul {
@@ -377,8 +410,7 @@ main h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-style: dashed;
-    border-color: aquamarine;
+
     padding: 0%;
   }
 
@@ -429,36 +461,37 @@ main h2 {
   }
 
   .contacto-main-background {
+    display: flex;
+    flex-direction: column;
     background-image: url(../assets/img/Fondo\ Paisaje\ Color.jpg);
     background-size: cover;
   }
 
-  .contacto-main {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    height: 75vh;
+  .contacto-article {
+    margin-top: 15vh;
+    background-color: rgba(128, 128, 128, 0.50);
+    border-radius: 5vw;
+    width: 70%;
+    height: 50vh;
+    align-self: center;
+    padding: 6vw;
   }
 
-  .contacto-main {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .contacto-main h2 {
+  .contacto-article h2 {
     font-size: 2rem;
     color: aliceblue;
   }
 
 
-  .contacto-main fieldset {
+  .contacto-article fieldset {
     font-size: 1.5rem;
     color: aliceblue;
-
+    padding: 2.5vw;
     width: 100%;
+  }
+
+  .lista-formulario {
+    padding: 0vw;
   }
 
 
