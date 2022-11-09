@@ -19,7 +19,7 @@ header {
   justify-items: center;
   width: 20vw;
   height: 97vh;
-  padding: 10px;
+  padding: 1rem;
 }
 
 main {
@@ -44,11 +44,15 @@ footer {
 
 footer p {
   color: aliceblue;
-
+  margin-bottom: 0%;
 }
 
 footer aside {
-  max-height: 4vh;
+  max-height: 3vh;
+}
+
+footer aside a img {
+  max-height: 2vh;
 }
 
 /*CLASES GENERALES*/
@@ -122,7 +126,7 @@ header nav ul {
   text-decoration: none;
   text-align: center;
   font-style: normal;
-  line-height: 40px;
+  line-height: 6vh;
   font-family: "Oswald", sans-serif;
   list-style: none;
   font-weight: 700;
@@ -143,7 +147,7 @@ a:visited {
   text-decoration: none;
 }
 
-header #redes {
+#redes {
   grid-area: aside;
 }
 
@@ -167,8 +171,8 @@ main h2 {
   justify-content: space-around;
   margin: 5%;
   padding: 1rem;
-  width: 400px;
-  height: 300px;
+  width: 30vw;
+  height: 30vh;
   font-family: "Oswald", sans-serif;
   text-shadow: 1px;
 }
@@ -243,10 +247,10 @@ main h2 {
     "img4 img5 img6";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1rem;
   align-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 1rem;
 }
 
 .books img {
@@ -267,10 +271,10 @@ main h2 {
     "carousel carousel carousel";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1rem;
   align-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 1.5rem;
 }
 
 .retrato img {
@@ -367,7 +371,6 @@ main h2 {
     justify-items: center;
     padding-top: 2vh;
     padding-bottom: 2vh;
-
   }
 
   .seccion-navegacion__logo {
@@ -380,7 +383,6 @@ main h2 {
 
   .seccion-navegacion__logo a img {
     width: 15vh;
-
   }
 
   header nav ul {
@@ -408,13 +410,20 @@ main h2 {
     justify-content: flex-start;
   }
 
+
   .main-article {
     background-color: rgba(128, 128, 128, 0.493);
-    border-radius: 10vw;
+    border-radius: 5vw;
     padding: 8vw;
     align-self: flex-end;
     font-size: 1rem;
     justify-self: end;
+    width: 60vw;
+    height: 35vh;
+  }
+
+  footer {
+    width: 100vw;
   }
 
   .retrato-main-background {
@@ -472,4 +481,6 @@ main h2 {
   .lista-formulario {
     padding: 0vw;
   }
+
+
 }
