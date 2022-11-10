@@ -1,7 +1,7 @@
 /*ESTILOS GENERALES*/
 
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -36,7 +36,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 1vh;
   gap: 1%;
   align-items: center;
   padding-left: 2%;
@@ -410,7 +409,6 @@ main h2 {
     justify-content: flex-start;
   }
 
-
   .main-article {
     background-color: rgba(128, 128, 128, 0.493);
     border-radius: 5vw;
@@ -470,7 +468,6 @@ main h2 {
     color: aliceblue;
   }
 
-
   .contacto-article fieldset {
     font-size: 1.5rem;
     color: aliceblue;
@@ -481,6 +478,4 @@ main h2 {
   .lista-formulario {
     padding: 0vw;
   }
-
-
 }
