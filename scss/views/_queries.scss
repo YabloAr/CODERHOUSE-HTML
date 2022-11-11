@@ -1,0 +1,128 @@
+@media screen and(max-width: 576px) {
+
+    .button-50 {
+        padding: 8px 30px;
+        margin-top: 3vh;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: 35vh;
+        justify-items: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .seccion-navegacion__logo {
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        width: 20vh;
+    }
+
+    .seccion-navegacion__logo a img {
+        width: 15vh;
+    }
+
+    header nav ul {
+        width: 90%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        padding: 0;
+    }
+
+    header nav ul li a:hover {
+        color: azure
+    }
+
+    .index-main-background {
+        background-image: url("../assets/img/Fondo\ Vertical\ Chicho\ Color.jpg");
+        background-size: cover;
+    }
+
+    main {
+        width: 100vw;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .main-article {
+        background-color: rgba(128, 128, 128, 0.493);
+        border-radius: 5vw;
+        padding: 8vw;
+        align-self: flex-end;
+        font-size: 1rem;
+        justify-self: end;
+        width: 60vw;
+        height: 35vh;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    .retrato-main-background {
+        background-image: url("../assets/img/Fondo\ Vertical\ Maca\ Bn.jpg");
+        background-size: cover;
+    }
+
+    #retrato-contenedor-carousel {
+        width: 100%;
+    }
+
+    .retrato {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-between;
+        align-items: center;
+    }
+
+    #retrato-articulo-info {
+        background-color: rgba(128, 128, 128, 0.493);
+        border-radius: 10vw;
+        padding: 8vw;
+    }
+
+    .contacto-main-background {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../assets/img/Fondo\ Paisaje\ Color.jpg');
+        background-size: cover;
+    }
+
+    .contacto-article {
+        margin-top: 15vh;
+        background-color: rgba(128, 128, 128, 0.50);
+        border-radius: 5vw;
+        width: 70%;
+        height: 50vh;
+        align-self: center;
+        padding: 6vw;
+    }
+
+    .contacto-article h2 {
+        font-size: 2rem;
+        color: aliceblue;
+    }
+
+    .contacto-article fieldset {
+        font-size: 1.5rem;
+        color: aliceblue;
+        padding: 2.5vw;
+        width: 100%;
+    }
+
+    .lista-formulario {
+        padding: 0;
+    }
+}

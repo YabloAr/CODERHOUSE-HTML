@@ -1,0 +1,24 @@
+.encajar-a-contenedor {
+    width: 100%;
+}
+
+.main-articulo {
+    color: white;
+    margin: 5%;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vh;
+    text-shadow: 1px;
+
+    a {
+        text-decoration: none;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+h2 {
+    line-height: 5rem;
+    font-size: 2rem;
+}

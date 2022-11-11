@@ -1,0 +1,40 @@
+header {
+    display: grid;
+    grid-template-areas: "logo" "nav" "none" "aside";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contenedor-logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#redes {
+    grid-area: aside;
+}
+
+
+.main-retrato {
+    display: grid;
+    grid-template-areas: "retrato-info retrato-info retrato-info" "carousel carousel carousel" "carousel carousel carousel";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+
+#retrato-articulo-info {
+    grid-area: retrato-info;
+}
+
+#retrato-contenedor-carousel {
+    width: 60%;
+    grid-area: carousel;
+}

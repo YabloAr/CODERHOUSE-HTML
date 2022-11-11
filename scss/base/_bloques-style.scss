@@ -1,0 +1,107 @@
+.main-articulo {
+    color: white;
+    margin: 5%;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vh;
+    text-shadow: 1px;
+}
+
+.index-main-background {
+    background-image: url("../assets/img/Fondo\ Chico\ Color.jpg");
+    background-size: cover;
+}
+
+.retrato-main-background {
+    background-image: url("../../assets/img/Fondo\ Chicho\ Bn.jpg");
+    background-size: cover;
+}
+
+.books-main-background {
+    background-image: url("../assets/img/Fondo\ Chicho\ Bn.jpg");
+    background-size: cover;
+}
+
+.tienda-main-background {
+    background-image: url("../assets/img/Fondo\ Estudio\ Color.jpg");
+    background-size: cover;
+}
+
+.contacto-main-background {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/img/Fondo\ Paisaje\ Color.jpg');
+    background-size: cover;
+}
+
+.main-article {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5%;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vh;
+    text-shadow: 1px;
+}
+
+.main-article a {
+    text-decoration: none;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contacto-article {
+    margin-top: 10vh;
+    background-color: rgba(128, 128, 128, 0.50);
+    border-radius: 2vw;
+    width: 40%;
+    align-self: center;
+    padding: 2vw;
+}
+
+.contacto-article h2 {
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+.contacto-article fieldset {
+    font-size: 1vw;
+    color: aliceblue;
+    padding: 2vw;
+    width: 100%;
+}
+
+.lista-formulario {
+    padding: 0.5vw;
+}
+
+.books {
+    display: grid;
+    grid-template-areas: "books-info books-info books-info" "img1 img2 img3" "img4 img5 img6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.books img {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.books #info {
+    grid-area: books-info;
+}
+
+
+/* CORRECCION DE CAROUSEL POR SELECTORES */
+
+.main-article fieldset {
+    padding: 5%;
+}
