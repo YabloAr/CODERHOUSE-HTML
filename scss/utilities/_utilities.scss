@@ -24,15 +24,14 @@ h2 {
 }
 
 #retrato-contenedor-carousel {
-
-
     padding-bottom: 3vh;
 }
 
 
 .contenedor-seis-fotos {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-style: dashed;
+    border-color: aqua;
 }
