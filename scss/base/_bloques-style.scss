@@ -34,24 +34,6 @@
     background-size: cover;
 }
 
-.main-article {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 5%;
-    padding: 1rem;
-    width: 30vw;
-    height: 30vh;
-    text-shadow: 1px;
-}
-
-.main-article a {
-    text-decoration: none;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 .contacto-article {
     margin-top: 10vh;
@@ -98,7 +80,6 @@
 .books #info {
     grid-area: books-info;
 }
-
 
 /* CORRECCION DE CAROUSEL POR SELECTORES */
 
