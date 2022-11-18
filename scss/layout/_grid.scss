@@ -5,6 +5,12 @@ header {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+header {
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+}
+
 .contenedor-logo {
     grid-area: logo;
 }
@@ -36,45 +42,9 @@ nav {
 }
 
 #contenedor-carousel {
-    width: 50%;
     grid-area: carousel;
 }
 
-.contenedor-galeria {
-    display: grid;
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    align-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
 
-#info {
-    grid-area: books-info;
-}
-
-#img1 {
-    grid-area: img1;
-}
-
-#img2 {
-    grid-area: img2;
-}
-
-#img3 {
-    grid-area: img3;
-}
-
-#img4 {
-    grid-area: img4;
-}
-
-#img5 {
-    grid-area: img5;
-}
-
-#img6 {
-    grid-area: img6;
-}
+/*CONTENEDOR GALERIA ESTA UBICADO DE MOMENTO, SOLO EN BOOKS.HTML*/
+/*A continuacion intentare armar lo intencionado con flexbox en tienda.html, y este sistema en grid quedara en stand by. */

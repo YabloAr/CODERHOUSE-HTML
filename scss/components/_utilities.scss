@@ -47,10 +47,23 @@
     transform: translate(2px, 2px);
 }
 
-
+.button-50 {
+    a:visited {
+        text-decoration: none;
+    }
+}
 /*CARROUSELL*/
 
-/* #contenedor-carousel {
-    padding-bottom: 3vh;
+#contenedor-carousel {
+    margin: 5%;
+    align-self: center;
+    width: 50%;
+
+    box-shadow: 0 0 40px 20px rgb(34, 34, 34);
+
 }
- */
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}

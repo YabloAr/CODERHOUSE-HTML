@@ -1,15 +1,36 @@
-.retrato img {
-    width: 100%;
+/*Imagenes de BOOKS.HTML */
+
+/* .books {
+    img {
+        max-width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+} */
+
+/* Galeria de Imagenes para books.html y tienda.html */
+
+.contenedor-galeria {
     align-self: center;
-    justify-self: center;
+    width: 95%;
+    height: 73%;
+
+    img {
+        width: 16%;
+        border-style: groove;
+        border-color: aliceblue;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    }
 }
 
-.books img {
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-}
+/*Logo Instgram del Footer*/
 
-footer aside a img {
-    max-height: 2vh;
+footer {
+    aside {
+        a {
+            img {
+                max-height: 2vh;
+            }
+        }
+    }
 }

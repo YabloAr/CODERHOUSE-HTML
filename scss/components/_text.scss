@@ -4,18 +4,26 @@
 
 .main-articulo {
     color: white;
-    margin: 5%;
     padding: 1rem;
-    width: 30vw;
-    height: 30vh;
-    text-shadow: 1px;
+    width: 80%;
+    height: 25%;
+    text-shadow: 2px 2px 2px #000000;
 
     a {
         text-decoration: none;
+        color: white;
         border-radius: 2rem;
         display: flex;
         flex-direction: row-reverse;
     }
+}
+
+.book-articulo {
+    color: white;
+    padding: 1rem;
+    width: 80%;
+    height: 25%;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 p {
@@ -29,32 +37,60 @@ h2 {
     font-weight: bold;
 }
 
-
-.contenedor-seis-fotos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-style: dashed;
-    border-color: aqua;
+h3 {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: bold;
 }
 
-.contacto-article {
-    margin-top: 10vh;
-    background-color: rgba(128, 128, 128, 0.50);
-    border-radius: 2vw;
-    width: 40%;
-    align-self: center;
-    padding: 2vw;
+
+.contacto-articulo {
+    margin: 2%;
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+    width: 90%;
+    height: 40%;
+    align-self: left;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 0.1rem;
 }
 
 
 fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 1% 1% 2%;
     font-size: 1vw;
     color: aliceblue;
-    padding: 2vw;
     width: 100%;
+    height: 85%;
+    border-color: rgb(97, 97, 97);
+
+    #contenedor-consulta {
+        height: 80%;
+        width: 60%;
+    }
+
+    #form-consulta-area {
+        height: 100%;
+        width: 100%;
+
+    }
 }
 
 .lista-formulario {
     padding: 0.5vw;
+
+    input {
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+
+    select {
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
 }

@@ -1,23 +1,19 @@
 html {
     height: 100vh;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-}
-
-header {
-    width: 20%;
-    height: 97%;
-}
-
-main {
-    height: 97%;
-    width: 80%;
-}
-
-footer {
-    height: 3%;
-    width: 100%;
+    body {
+        height: 100%;
+        width: 100%;
+        header {
+            width: 20%;
+            height: 97%;
+        }
+        main {
+            height: 97%;
+            width: 80%;
+        }
+        footer {
+            height: 3%;
+            width: 100%;
+        }
+    }
 }
