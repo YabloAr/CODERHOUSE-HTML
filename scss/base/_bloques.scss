@@ -1,18 +1,23 @@
+html {
+    height: 100vh;
+}
+
 body {
+    height: 100%;
     width: 100%;
 }
 
 header {
-    width: 20vw;
-    height: 97vh;
+    width: 20%;
+    height: 97%;
 }
 
 main {
-    width: 100%;
-    height: 97vh;
+    height: 97%;
+    width: 80%;
 }
 
 footer {
-    height: 3vh;
-    width: 95vw;
+    height: 3%;
+    width: 100%;
 }

@@ -18,7 +18,8 @@ nav {
 }
 
 
-.main-retrato {
+/*
+.main-retrato { COMENTADO PORQUE BOOTSTRAP TIENE SU PROPIA LIBRERIA SOBRE GRID, Y LA VERDAD ES QUE SI LO DESACTIVO ANDA MEJOR
     display: grid;
     grid-template-areas: "retrato-info retrato-info retrato-info" "carousel carousel carousel" "carousel carousel carousel";
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,13 +29,52 @@ nav {
     align-items: center;
     padding: 1.5rem;
 }
-
+*/
 
 #retrato-articulo-info {
     grid-area: retrato-info;
 }
 
-#retrato-contenedor-carousel {
-    width: 60%;
+#contenedor-carousel {
+    width: 50%;
     grid-area: carousel;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    align-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#info {
+    grid-area: books-info;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+}
+
+#img5 {
+    grid-area: img5;
+}
+
+#img6 {
+    grid-area: img6;
 }

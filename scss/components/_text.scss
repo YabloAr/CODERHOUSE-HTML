@@ -1,0 +1,60 @@
+.encajar-a-contenedor {
+    width: 100%;
+}
+
+.main-articulo {
+    color: white;
+    margin: 5%;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vh;
+    text-shadow: 1px;
+
+    a {
+        text-decoration: none;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    line-height: 5rem;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+.contenedor-seis-fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: dashed;
+    border-color: aqua;
+}
+
+.contacto-article {
+    margin-top: 10vh;
+    background-color: rgba(128, 128, 128, 0.50);
+    border-radius: 2vw;
+    width: 40%;
+    align-self: center;
+    padding: 2vw;
+}
+
+
+fieldset {
+    font-size: 1vw;
+    color: aliceblue;
+    padding: 2vw;
+    width: 100%;
+}
+
+.lista-formulario {
+    padding: 0.5vw;
+}

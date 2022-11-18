@@ -1,11 +1,27 @@
-.main-articulo {
-    color: white;
-    margin: 5%;
-    padding: 1rem;
-    width: 30vw;
-    height: 30vh;
-    text-shadow: 1px;
+/*TEST SETTINGS BOX*/
+
+html {
+    border-style: dashed;
+    border-color: greenyellow
 }
+
+body {
+    border-style: dashed;
+    border-color: red
+}
+
+header {
+    border-style: dashed;
+    border-color: orange;
+}
+
+main {
+    border-style: dashed;
+    border-color: aqua;
+    background-color: pink;
+}
+
+/*MAIN BACKGROUND IMAGES*/
 
 .index-main-background {
     background-image: url("../assets/img/Fondo\ Chico\ Color.jpg");
@@ -28,61 +44,19 @@
 }
 
 .contacto-main-background {
-    display: flex;
-    flex-direction: column;
     background-image: url('../assets/img/Fondo\ Paisaje\ Color.jpg');
     background-size: cover;
 }
 
+/*NAV EN _NAVBAR.SCSS*/
 
-.contacto-article {
-    margin-top: 10vh;
-    background-color: rgba(128, 128, 128, 0.50);
-    border-radius: 2vw;
-    width: 40%;
-    align-self: center;
-    padding: 2vw;
-}
+/*FOOTER STYLES*/
 
-.contacto-article h2 {
-    font-size: 2vw;
+footer p {
     color: aliceblue;
+    margin-bottom: 0;
 }
 
-.contacto-article fieldset {
-    font-size: 1vw;
-    color: aliceblue;
-    padding: 2vw;
-    width: 100%;
-}
-
-.lista-formulario {
-    padding: 0.5vw;
-}
-
-.books {
-    display: grid;
-    grid-template-areas: "books-info books-info books-info" "img1 img2 img3" "img4 img5 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-    align-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.books img {
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-}
-
-.books #info {
-    grid-area: books-info;
-}
-
-/* CORRECCION DE CAROUSEL POR SELECTORES */
-
-.main-article fieldset {
-    padding: 5%;
+footer aside {
+    max-height: 3vh;
 }

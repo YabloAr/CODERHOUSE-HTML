@@ -1,14 +1,12 @@
 @import "./base/reset";
+@import "./utilities/variables";
 @import "./base/typos";
 @import "./base/bloques";
 @import "./base/bloques-style";
 @import "./layout/flex";
 @import "./layout/grid";
 @import "./components/navbar";
-@import "./components/buttons";
+@import "./components/utilities";
 @import "./components/images";
-
 @import "./components/text";
-@import "./utilities/utilities";
 @import "./views/queries";
-@import "./utilities/variables";

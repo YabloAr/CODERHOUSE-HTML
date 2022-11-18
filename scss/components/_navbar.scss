@@ -25,11 +25,13 @@ nav {
         text-decoration: none;
         text-align: center;
         font-style: normal;
+        letter-spacing: 0.2rem;
         line-height: 6vh;
         list-style: none;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: grey;
+        padding: 0;
     }
 }
 
@@ -47,7 +49,7 @@ a {
 }
 
 
-header footer {
+footer {
     display: flex;
     grid-area: footer;
     color: aliceblue;
