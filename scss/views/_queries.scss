@@ -6,13 +6,14 @@
     }
 
     body {
-        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     header {
         display: flex;
         flex-direction: column;
-        width: 100vh;
+        width: 100%;
         height: 35vh;
         justify-items: center;
         padding-top: 2vh;
@@ -37,7 +38,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
         padding: 0;
     }
 
@@ -100,7 +100,7 @@
         background-size: cover;
     }
 
-    .contacto-article {
+    .contacto-articulo {
         margin-top: 15vh;
         background-color: rgba(128, 128, 128, 0.50);
         border-radius: 5vw;
@@ -108,19 +108,18 @@
         height: 50vh;
         align-self: center;
         padding: 6vw;
+        h2 {
+            font-size: 2rem;
+            color: aliceblue;
+        }
+        fieldset {
+            font-size: 1.5rem;
+            color: aliceblue;
+            padding: 2.5vw;
+            width: 100%;
+        }
     }
 
-    .contacto-article h2 {
-        font-size: 2rem;
-        color: aliceblue;
-    }
-
-    .contacto-article fieldset {
-        font-size: 1.5rem;
-        color: aliceblue;
-        padding: 2.5vw;
-        width: 100%;
-    }
 
     .lista-formulario {
         padding: 0;
