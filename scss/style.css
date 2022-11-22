@@ -71,7 +71,7 @@ main {
 }
 
 .contacto-main-background {
-  background-image: url("../../assets/img/Fondo Contacto.jpg");
+  background-image: url("../assets/img/Fondo Contacto.jpg");
   background-size: cover;
 }
 
@@ -398,110 +398,142 @@ fieldset #form-consulta-area {
 }
 
 @media screen and (max-width: 576px) {
-  .button-50 {
-    padding: 8px 30px;
-    margin-top: 3vh;
+  /*BLOQUES RESIZE*/
+  html {
+    height: auto;
   }
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
+  html body {
+    height: 100%;
     width: 100%;
-    height: 35vh;
-    justify-items: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
   }
-  .seccion-navegacion__logo {
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    width: 20vh;
+  html body header {
+    width: 100%;
+    height: 33vh;
   }
-  .seccion-navegacion__logo a img {
-    width: 15vh;
-  }
-  header nav ul {
-    width: 90%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  html body header nav {
     padding: 0;
   }
-  header nav ul li a:hover {
-    color: azure;
+  html body main {
+    height: 90vh;
+    width: 100%;
   }
+  html body footer {
+    height: 4vh;
+    width: 100%;
+  }
+  /*MAINS BACKGROUND*/
   .index-main-background {
     background-image: url("../assets/img/Fondo Vertical Chicho Color.jpg");
     background-size: cover;
-  }
-  main {
-    width: 100vw;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-  }
-  .main-article {
-    background-color: rgba(128, 128, 128, 0.493);
-    border-radius: 5vw;
-    padding: 8vw;
-    align-self: flex-end;
-    font-size: 1rem;
-    justify-self: end;
-    width: 60vw;
-    height: 35vh;
-  }
-  footer {
-    width: 100vw;
   }
   .retrato-main-background {
     background-image: url("../assets/img/Fondo Vertical Maca Bn.jpg");
     background-size: cover;
   }
-  #retrato-contenedor-carousel {
-    width: 100%;
-  }
-  .retrato {
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: space-between;
-    align-items: center;
-  }
-  #retrato-articulo-info {
-    background-color: rgba(128, 128, 128, 0.493);
-    border-radius: 10vw;
-    padding: 8vw;
-  }
-  .contacto-main-background {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../assets/img/Fondo Paisaje Color.jpg");
+  .books-main-background {
+    background-image: url("../assets/img/Fondobook Vertical.jpg");
     background-size: cover;
   }
-  .contacto-articulo {
-    margin-top: 15vh;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 5vw;
+  .tienda-main-background {
+    background-image: url("../assets/img/Fondo Estudio Vertical Color.png");
+    background-size: cover;
+  }
+  .contacto-main-background {
+    background-image: url("../assets/img/Fondo Contacto Vertical.jpg");
+    background-size: cover;
+  }
+  /*BLOQUES LAYOUT*/
+  html body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  html body header {
+    display: grid;
+    grid-template-areas: "logo nav" "logo nav" "logo nav" "logo nav";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  html body header ul {
+    line-height: 3rem;
+  }
+  html body main {
+    flex-direction: column;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    padding-left: 10%;
+    align-items: center;
+  }
+  html body footer {
+    position: bottom;
+  }
+  .index-main-background {
+    flex-direction: column-reverse;
+    padding-bottom: 10%;
+  }
+  /*ESTILOS ADAPTADOS*/
+  .main-articulo {
+    gap: 1rem;
+    background-color: rgba(134, 134, 134, 0.2);
+    border-radius: 5%;
+    width: 90%;
+    height: auto;
+  }
+  .main-retrato {
+    padding: 5%;
+    align-items: center;
+  }
+  .contenedor-galeria {
+    width: 90%;
+    height: 80vh;
+    overflow: scroll;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .contenedor-galeria img {
     width: 70%;
-    height: 50vh;
-    align-self: center;
-    padding: 6vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .contacto-articulo h2 {
-    font-size: 2rem;
-    color: aliceblue;
+  .books {
+    padding: 5%;
   }
-  .contacto-articulo fieldset {
-    font-size: 1.5rem;
-    color: aliceblue;
-    padding: 2.5vw;
+  .books .book-articulo {
+    height: auto;
+    background-color: rgba(134, 134, 134, 0.3);
+  }
+  .books .contenedor-galeria {
+    height: auto;
+  }
+  .contacto-main-background {
+    padding: 5%;
+  }
+  .contacto-main-background .contacto-articulo {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    align-items: center;
+    width: 97vw;
+  }
+  .contacto-main-background fieldset {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    line-height: 1.2rem;
+    width: 92vw;
+    padding: 20%;
+  }
+  .contacto-main-background fieldset .lista-formulario {
+    width: 88vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .contacto-main-background fieldset .lista-formulario label {
     width: 100%;
   }
-  .lista-formulario {
-    padding: 0;
+  /*QUERY CARROUSEL*/
+  #contenedor-carousel {
+    width: 98%;
   }
 }/*# sourceMappingURL=style.css.map */
