@@ -529,9 +529,6 @@ fieldset #form-consulta-area {
     display: flex;
     flex-direction: row;
   }
-  .contacto-main-background fieldset .lista-formulario label {
-    width: 100%;
-  }
   /*QUERY CARROUSEL*/
   #contenedor-carousel {
     width: 98%;
