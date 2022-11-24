@@ -1,26 +1,3 @@
-/*TEST SETTINGS BOX*/
-
-/* html {
-    border-style: dashed;
-    border-color: greenyellow
-}
-
-body {
-    border-style: dashed;
-    border-color: red
-}
-
-header {
-    border-style: dashed;
-    border-color: orange;
-}
-
-main {
-    border-style: dashed;
-    border-color: aqua;
-    background-color: pink;
-} */
-
 /*MAIN BACKGROUND IMAGES*/
 
 .index-main-background {
@@ -35,6 +12,7 @@ main {
 
 .books-main-background {
     background-image: url("../assets/img/Fondobook.jpg");
+    background-color: aqua;
     background-size: cover;
 }
 
@@ -44,7 +22,7 @@ main {
 }
 
 .contacto-main-background {
-    background-image: url('../assets/img/Fondo\ Contacto.jpg');
+    background-image: url("../assets/img/Fondo\ Contacto.jpg");
     background-size: cover;
 }
 

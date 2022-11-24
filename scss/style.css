@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*VARIABLES DE COLOR DE TEXTO, usadas en el mapa debajo*/
+/*MAP DE TEXTO: Tamaño y Efecto*/
+/*Utilizado en _text.scss*/
+/* MIXINS Utilizados en _flex.scss*/
+.contenedor-galeria {
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,27 +39,6 @@ html body footer {
   width: 100%;
 }
 
-/*TEST SETTINGS BOX*/
-/* html {
-    border-style: dashed;
-    border-color: greenyellow
-}
-
-body {
-    border-style: dashed;
-    border-color: red
-}
-
-header {
-    border-style: dashed;
-    border-color: orange;
-}
-
-main {
-    border-style: dashed;
-    border-color: aqua;
-    background-color: pink;
-} */
 /*MAIN BACKGROUND IMAGES*/
 .index-main-background {
   background-image: url("../assets/img/Fondo Chico Color.jpg");
@@ -62,6 +52,7 @@ main {
 
 .books-main-background {
   background-image: url("../assets/img/Fondobook.jpg");
+  background-color: aqua;
   background-size: cover;
 }
 
@@ -102,22 +93,19 @@ main {
 }
 
 footer {
-  background-color: #000;
   display: flex;
   flex-direction: row;
   justify-content: left;
-  gap: 1%;
   align-items: center;
   padding-left: 2%;
+  gap: 1%;
+  background-color: #000;
 }
 
 .contenedor-galeria {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 1%;
-  align-content: center;
-  justify-content: center;
 }
 
 header {
@@ -176,8 +164,6 @@ header .contenedor-logo {
 }
 header .contenedor-logo img {
   width: 100%;
-  display: flex;
-  justify-items: center;
 }
 header nav {
   display: flex;
@@ -205,12 +191,13 @@ header nav ul a {
   text-decoration: none;
   color: grey;
 }
-header nav ul a a:visited {
+header nav ul a:visited {
+  color: grey;
   text-decoration: none;
 }
-header nav ul a .nav-a-onhover-bigger:hover {
+header nav ul a:hover {
   font-size: larger;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 
 /* BOTON USADO EN INDEX MAIN: me copie el style de stackoverflow*/
@@ -313,47 +300,48 @@ footer aside a img {
 }
 
 .main-articulo {
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000000;
   padding: 1rem;
   width: 80%;
   height: 25%;
-  text-shadow: 2px 2px 2px #000000;
 }
 .main-articulo a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  color: white;
   border-radius: 2rem;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .book-articulo {
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000000;
   padding: 1rem;
   width: 80%;
   height: 25%;
-  text-shadow: 2px 2px 2px #000000;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  line-height: 5rem;
   font-size: 2rem;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  line-height: 5rem;
   font-weight: bold;
 }
 
 h3 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
   line-height: 3rem;
-  font-size: 1.5rem;
-  color: aliceblue;
   font-weight: bold;
 }
 
 .contacto-articulo {
+  text-shadow: 2px 2px 4px #000000;
   margin: 2%;
   padding: 1.5%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -361,19 +349,18 @@ h3 {
   width: 90%;
   height: 40%;
   align-self: left;
-  text-shadow: 2px 2px 4px #000000;
   letter-spacing: 0.1rem;
 }
 
 fieldset {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
   padding: 1% 1% 2%;
-  font-size: 1vw;
-  color: aliceblue;
   width: 100%;
   height: 85%;
   border-color: rgb(97, 97, 97);

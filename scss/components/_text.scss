@@ -3,15 +3,15 @@
 }
 
 .main-articulo {
-    color: white;
+    color: map-get($mapaTexto, colorWhite);
+    text-shadow: map-get($mapaTexto, sombra);
     padding: 1rem;
     width: 80%;
     height: 25%;
-    text-shadow: 2px 2px 2px #000000;
 
     a {
+        color: map-get($mapaTexto, colorWhite);
         text-decoration: none;
-        color: white;
         border-radius: 2rem;
         display: flex;
         flex-direction: row-reverse;
@@ -19,33 +19,33 @@
 }
 
 .book-articulo {
-    color: white;
+    color: map-get($mapaTexto, colorWhite);
+    text-shadow: map-get($mapaTexto, sombra);
     padding: 1rem;
     width: 80%;
     height: 25%;
-    text-shadow: 2px 2px 2px #000000;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: map-get($mapaTexto, sizeBig);
 }
 
 h2 {
+    font-size: map-get($mapaTexto, sizeBigger);
+    color: map-get($mapaTexto, colorWhite);
     line-height: 5rem;
-    font-size: 2rem;
-    color: aliceblue;
     font-weight: bold;
 }
 
 h3 {
+    color: map-get($mapaTexto, colorWhite);
+    font-size: map-get($mapaTexto, sizeBigger);
     line-height: 3rem;
-    font-size: 1.5rem;
-    color: aliceblue;
     font-weight: bold;
 }
 
-
 .contacto-articulo {
+    text-shadow: map-get($mapaTexto, sombraLarger);
     margin: 2%;
     padding: 1.5%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -53,20 +53,18 @@ h3 {
     width: 90%;
     height: 40%;
     align-self: left;
-    text-shadow: 2px 2px 4px #000000;
     letter-spacing: 0.1rem;
 }
 
-
 fieldset {
+    color: map-get($mapaTexto, colorWhite);
+    font-size: map-get($mapaTexto, sizeLarger);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
     padding: 1% 1% 2%;
-    font-size: 1vw;
-    color: aliceblue;
     width: 100%;
     height: 85%;
     border-color: rgb(97, 97, 97);
@@ -79,7 +77,6 @@ fieldset {
     #form-consulta-area {
         height: 100%;
         width: 100%;
-
     }
 }
 

@@ -1,0 +1,45 @@
+/*VARIABLES DE COLOR DE TEXTO, usadas en el mapa debajo*/
+
+$textoGrey: #b1b1b1;
+$textoRed: rgb(255, 0, 0);
+$textoWhite: rgb(255, 255, 255);
+$textoBluish: #dfdfff;
+
+/*MAP DE TEXTO: Tamaño y Efecto*/
+/*Utilizado en _text.scss*/
+
+$mapaTexto: (
+    sizeStandard: 1rem,
+    sizeLarger: 1.2rem,
+    sizeBig: 1.5rem,
+    sizeBigger: 2rem,
+    sizeTremendous: 10rem,
+    colorGrey: $textoGrey,
+    colorRed: $textoRed,
+    colorWhite: $textoWhite,
+    colorBluish: $textoBluish,
+    sombra: 2px 2px 2px #000000,
+    sombraLarger: 2px 2px 4px #000000,
+);
+
+/* MIXINS Utilizados en _flex.scss*/
+
+%alignAndJustifyCenter {
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-row-center-content {
+    display: flex;
+    flex-direction: row;
+    @extend %alignAndJustifyCenter;
+}

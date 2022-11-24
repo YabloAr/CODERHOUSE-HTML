@@ -8,8 +8,6 @@ header {
 
         img {
             width: 100%;
-            display: flex;
-            justify-items: center;
         }
     }
 
@@ -38,16 +36,17 @@ header {
             a {
                 text-decoration: none;
                 color: grey;
-                a:visited {
-                    text-decoration: none;
-                }
+            }
 
-                .nav-a-onhover-bigger:hover {
-                    font-size: larger;
-                    color: aliceblue;
-                }
+            a:visited {
+                color: grey;
+                text-decoration: none;
+            }
+
+            a:hover {
+                font-size: larger;
+                color: map-get($mapaTexto, colorWhite);
             }
         }
     }
-
 }
