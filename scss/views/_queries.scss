@@ -1,5 +1,4 @@
 @media screen and(max-width: 576px) {
-
     /*BLOQUES RESIZE*/
 
     html {
@@ -26,9 +25,7 @@
                 height: 4vh;
                 width: 100%;
             }
-
         }
-
     }
 
     /*MAINS BACKGROUND*/
@@ -54,7 +51,7 @@
     }
 
     .contacto-main-background {
-        background-image: url('../assets/img/Fondo\ Contacto\ Vertical.jpg');
+        background-image: url("../assets/img/Fondo\ Contacto\ Vertical.jpg");
         background-size: cover;
     }
 
@@ -71,7 +68,7 @@
                 grid-template-columns: 2fr 1fr;
                 grid-template-rows: 1fr;
                 ul {
-                    line-height: 3rem
+                    line-height: 3rem;
                 }
             }
             main {
@@ -101,7 +98,6 @@
         border-radius: 5%;
         width: 90%;
         height: auto;
-
     }
 
     .main-retrato {
@@ -115,7 +111,6 @@
         overflow: scroll;
         flex-direction: column;
         align-content: flex-start;
-
 
         img {
             width: 70%;
@@ -149,11 +144,14 @@
             font-size: larger;
             line-height: 1.2rem;
             width: 92vw;
-            padding: 20%;
+            padding: 3%;
             .lista-formulario {
                 width: 88vw;
                 display: flex;
                 flex-direction: row;
+            }
+            #contenedor-consulta {
+                height: 30%;
             }
         }
     }

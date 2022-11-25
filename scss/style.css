@@ -479,12 +479,15 @@ fieldset #form-consulta-area {
     font-size: larger;
     line-height: 1.2rem;
     width: 92vw;
-    padding: 20%;
+    padding: 3%;
   }
   .contacto-main-background fieldset .lista-formulario {
     width: 88vw;
     display: flex;
     flex-direction: row;
+  }
+  .contacto-main-background fieldset #contenedor-consulta {
+    height: 30%;
   }
   /*QUERY CARROUSEL*/
   #contenedor-carousel {
